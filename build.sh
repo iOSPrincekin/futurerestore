@@ -10,6 +10,8 @@ which xcrun >/dev/null
 echo "[*] Building futurerestore"
 export FR_INSTALL_DIR="/usr/local"
 if [[ -z "$NO_CLEAN" ]]; then rm -rf cmake-build-release cmake-build-debug; fi
+BUILD_TYPE=$1
+if [[ "$BUILD_TYPE" == "Xcode" ]];then cmake ./ -B cmake-build-release -GXcode -DARCH=x86_64; exit; fi
 if [[ "$RELEASE" == "1" ]]
 then
   if [[ ! "$NO_CLEAN" == "1" ]]; then cmake -DCMAKE_INSTALL_PREFIX="${FR_INSTALL_DIR}" -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=$(which make) -DCMAKE_C_COMPILER="${CC}" -DCMAKE_CXX_COMPILER="${CXX}" -DCMAKE_MESSAGE_LOG_LEVEL="WARNING" -G "CodeBlocks - Unix Makefiles" -S ./ -B cmake-build-release $@; fi

@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.22)
 find_package(PkgConfig REQUIRED)
+include_directories(/usr/local/include
+    /usr/local/Cellar/openssl@1.1/1.1.1v/include/
+    /opt/local/include
+)
 execute_process(COMMAND git submodule update --init --recursive WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}" OUTPUT_STRIP_TRAILING_WHITESPACE)
 set(ignoreMe "${NO_PKGCFG} ${ASAN} ${NO_XCODE} ${ARCH}")
 set(SUBPROJECT_BUILD 1)
@@ -10,6 +14,7 @@ set(CMAKE_C_FLAGS_DEBUG "-g -O0 -DDEBUG")
 set(CMAKE_CXX_FLAGS_DEBUG "-g -O0 -DDEBUG")
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_VERBOSE_MAKEFILE ON)
 if(ASAN OR "$ENV{ASAN}" MATCHES "1")
     set(ASAN 1)
     set(ASAN_FLAG "-fsanitize=address -fsanitize-address-use-after-scope -fno-omit-frame-pointer")
