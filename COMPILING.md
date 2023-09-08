@@ -7,20 +7,20 @@
     * [openssl 3.0.3](https://github.com/openssl/openssl) (or CommonCrypto on macOS);
     * [libusb 1.0.25](https://github.com/libusb/libusb) (Linux/Windows only, macOS can use IOKit for libirecovery);
     * [libzip](https://github.com/nih-at/libzip);
-    * [libplist](https://github.com/libimobiledevice/libplist);
-    * [libusbmuxd](https://github.com/libimobiledevice/libusbmuxd);
-    * [libirecovery](https://github.com/libimobiledevice/libirecovery);
-    * [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice);
-    * [libimobiledevice-glue](https://github.com/libimobiledevice/libimobiledevice-glue);
+    * [libplist](https://github.com/libimobiledevice/libplist) (commit 2d8d7ef272db06783989f77ba1ed80aa0f4d2dfd);
+    * [libusbmuxd](https://github.com/libimobiledevice/libusbmuxd) (commit 8d30a559cf0585625d9d05dc8ce0dd495b1de4f4);
+    * [libirecovery](https://github.com/libimobiledevice/libirecovery) (commit c7b488fbf2a9ab95e451df1319e68662fff7b9b7);
+    * [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice) (commit 6fc41f57fc607df9b07446ca45bdf754225c9bd9);
+    * [libimobiledevice-glue](https://github.com/libimobiledevice/libimobiledevice-glue) (commit 214bafdde6a1434ead87357afe6cb41b32318495);
     * [libpng16](https://github.com/glennrp/libpng);
-    * [xpwn(fork)](https://github.com/nyuszika7h/xpwn);
-    * [libgeneral](https://github.com/tihmstar/libgeneral);
-    * [libfragmentzip](https://github.com/tihmstar/libfragmentzip);
-    * [libinsn](https://github.com/tihmstar/libinsn);
+    * [xpwn(fork)](https://github.com/planetbeing/xpwn.git) (commit ac362d4ffe4d0489a26144a1483ebf3b431da899);
+    * [libgeneral](https://github.com/tihmstar/libgeneral) (commit f6a74abb12e174af6768c13a265a7a2fbe43c33c);
+    * [libfragmentzip](https://github.com/tihmstar/libfragmentzip) (commit 1f6b7af4eb113002c3473f873bb8d63598dd354f);
+    * [libinsn](https://github.com/tihmstar/libinsn) (commit 64124fd2b1b57d7b76a0e2b0c06434a7048758d2);
     * [lzfse](https://github.com/lzfse/lzfse) (Linux/Windows only, macOS has built in libcompression);
-    * [img4tool](https://github.com/tihmstar/img4tool);
-    * [liboffsetfinder64(fork))](https://github.com/Cryptiiiic/liboffsetfinder64);
-    * [libipatcher(fork)](https://github.com/Cryptiiiic/libipatcher)
+    * [img4tool](https://github.com/tihmstar/img4tool) (commit aca6cf005c94caf135023263cbb5c61a0081804f);
+    * [liboffsetfinder64(fork))](https://github.com/tihmstar/liboffsetfinder64) (commit e093adefc92e9c3b56d8f5989835f3247ea0e575);
+    * [libipatcher(fork)](https://github.com/Cryptiiiic/libipatcher) (commit 1e855d70c84419014e363bdbcaead7b145fe3e1f)
 
 * ## Submodules
   Make sure these projects compile on your system (install it's dependencies):
